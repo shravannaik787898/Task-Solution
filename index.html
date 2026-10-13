@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanctify - Progress Bar & Timeline</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 8px;
+            color: #007bff;
+        }
+
+        /* --- 1. PROGRESS BAR STYLES --- */
+        .skill-box {
+            margin-bottom: 15px;
+        }
+
+        .skill-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .progress-bar-container {
+            background: #e9ecef;
+            border-radius: 20px;
+            overflow: hidden;
+            height: 18px;
+        }
+
+        .progress-fill {
+            background: #007bff;
+            height: 100%;
+            border-radius: 20px;
+        }
+
+        /* --- 2. TIMELINE STYLES --- */
+        .timeline {
+            position: relative;
+            padding-left: 20px;
+            border-left: 3px solid #007bff;
+            margin-top: 20px;
+        }
+
+        .timeline-item {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -27px;
+            top: 4px;
+            width: 12px;
+            height: 12px;
+            background: #007bff;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+
+        .timeline-date {
+            font-weight: bold;
+            color: #007bff;
+            font-size: 14px;
+        }
+
+        .timeline-title {
+            font-weight: bold;
+            font-size: 16px;
+            margin: 2px 0;
+        }
+
+        .timeline-desc {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Section 1: Progress Bars (Hypothetical Skills Data) -->
+    <h2>Agency Expertise (Progress Bars)</h2>
+    
+    <div class="skill-box">
+        <div class="skill-title"><span>Search Engine Optimization (SEO)</span><span>95%</span></div>
+        <div class="progress-bar-container">
+            <div class="progress-fill" style="width: 95%;"></div>
+        </div>
+    </div>
+
+    <div class="skill-box">
+        <div class="skill-title"><span>Social Media Marketing (SMM)</span><span>88%</span></div>
+        <div class="progress-bar-container">
+            <div class="progress-fill" style="width: 88%;"></div>
+        </div>
+    </div>
+
+    <div class="skill-box">
+        <div class="skill-title"><span>Web Design & Development</span><span>90%</span></div>
+        <div class="progress-bar-container">
+            <div class="progress-fill" style="width: 90%;"></div>
+        </div>
+    </div>
+
+    <div class="skill-box">
+        <div class="skill-title"><span>Brand Strategy</span><span>82%</span></div>
+        <div class="progress-bar-container">
+            <div class="progress-fill" style="width: 82%;"></div>
+        </div>
+    </div>
+
+
+    <!-- Section 2: Timeline (Hypothetical Dates from 2012) -->
+    <h2 style="margin-top: 40px;">Sanctify Growth Timeline</h2>
+    
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <div class="timeline-date">March 2012</div>
+            <div class="timeline-title">Sanctify Founded</div>
+            <p class="timeline-desc">Started as a small digital consultancy team in Goa.</p>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">August 2015</div>
+            <div class="timeline-title">Expanded to Full Service</div>
+            <p class="timeline-desc">Added custom web design and SEO solutions to our agency services.</p>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">January 2019</div>
+            <div class="timeline-title">100+ Clients Milestone</div>
+            <p class="timeline-desc">Crossed over 100 successful brand management projects across India.</p>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">November 2023</div>
+            <div class="timeline-title">Digital Excellence Award</div>
+            <p class="timeline-desc">Recognized as one of the top digital marketing agencies in Goa.</p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
